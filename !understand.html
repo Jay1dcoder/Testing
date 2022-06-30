@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- name
+    <input type="text" id="firstName"> -->
+    <!-- <script>
+        // var firstName;
+        // firstName = document.querySelector("#firstName");
+    prompt("Enter Your First Name")
+    </script> -->
+<!-- </body>
+</html> --> -->
+
+<HTML> 
+    <HEAD> 
+    <SCRIPT language="JavaScript"> 
+    function generateEvenNumber() 
+    {
+     //Declare variables 
+     var lastNumber, startNumber; 
+     //Assign the values 
+     lastNumber=parseInt(document.querySelector("#even").value); 
+    //  startNumber=0; 
+     for(startNumber=0;startNumber<lastNumber;startNumber=startNumber+2) 
+     { 
+     alert(startNumber); 
+     } 
+    }//End of the generateEvenNumber function 
+    </SCRIPT> 
+    </HEAD> 
+    <BODY> 
+    ENTER A NUMBER and Press TAB key: 
+     <INPUT type=text name=txtEvenNumber 
+    onBlur="generateEvenNumber()" id="even"><BR> 
+    </BODY> 
+    </HTML>

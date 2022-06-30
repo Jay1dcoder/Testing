@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        var modal = document.getElementById("modal");
+        var open = document.getElementById("openmodal");
+
+open.addEventListener("click", function(event){
+    
+})
+
+    </script>
+</head>
+<style>
+    #modal{
+        background-image: linear-gradient(red,blue);
+        margin-top: 10%;
+    }
+    form{
+        font-size: 30px;
+    }
+    input{
+        width: 500px;
+        height:30px;
+        font-size: 30px;
+    }
+    input:focus{
+        outline: 3px solid red;
+    }
+    form{
+        display: none;
+    }
+    /* button{
+        margin-top:5%;
+        padding: 20px;
+        font-size: 30px;
+        color: red;
+        background-color: gray;
+        box-shadow: -10px -10px blue
+    }
+    button:focus{
+        color: white;
+        background-color: purple;
+        box-shadow: -10px -10px red
+    } */
+</style>
+<body>
+
+<button id="openmodal" class="button open-button" onclick="modalShown()">OPEN MODAL</button>
+    <!-- <dialog id="modal" class="Modal" > -->
+        <form action="" id="modal">
+            <h1>WORKING WITH MODAL FORMS</h1>
+            <label for="">User-Name: </label>
+            <input type="text">
+<br><br>
+            <label for="">Password: </label>
+            <input type="text">
+        </form>
+    <!-- </dialog> -->
+</body>
+</html>

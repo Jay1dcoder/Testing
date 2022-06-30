@@ -1,0 +1,60 @@
+<!-- <HTML> 
+    <HEAD> 
+    <SCRIPT language="JavaScript"> 
+    function checkFirstName() 
+    {
+     //Declare variables 
+     var firstName; 
+     var firstNameLength; 
+     //Assign the values 
+     firstName=document.querySelector("#firstName").value; 
+     firstNameLength=document.querySelector("#firstName").value.length;
+     //Check the length of the first name 
+ if(firstNameLength==0) 
+ { 
+ alert("Please Enter your First Name"); 
+ } 
+}//End of the checkFirstName function 
+</SCRIPT> 
+</HEAD> 
+<BODY> 
+ Enter your first name 
+ <INPUT type=text name="txtFirstName" id="firstName"><BR> 
+ Enter your last name 
+ <INPUT type=text name="txtLastName" onFocus="checkFirstName()"> 
+</BODY> 
+</HTML> -->
+<HTML>
+<HEAD>
+
+<SCRIPT language="JavaScript"> 
+
+    function checkFirstName() {
+//Declare variables 
+     var firstName; 
+    //  var firstNameLength; 
+//Assign the value 
+                firstName=document.querySelector("#firstName").value; 
+//Check the length of the first name 
+                while(firstName.length==0) 
+         {
+                firstName=prompt("Enter Your First Name"); 
+                document.querySelector("#firstName").value=firstName; 
+         }
+}
+//End of the checkFirstName function
+    </SCRIPT> 
+
+</HEAD>
+    <BODY>
+Enter your first name 
+     <INPUT type=text name=txtFirstName id="firstName"><BR> 
+Enter your last name 
+     <INPUT type=text name=txtLastName onFocus="checkFirstName()"> 
+    </BODY> 
+
+    </HTML>
+
+
+
+

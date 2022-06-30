@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN WINDOW</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="radio" name="myColor" value="pink" CHECKED>pink 
+        <br>
+        <input type="radio" name="myColor" value="blue">blue 
+        <br>
+        <input type="radio" name="myColor" value="green">green 
+        <br>
+        <input type="radio" name="myColor" value="orange">orange 
+        <br>
+        <input type="button" value="DARK THEME" id="btn" onclick="openWindow()"> onmousedown="down()"
+    </form>
+<a href="google.com" id="google">goole</a>
+    <script>
+        var subWindow;
+        function openWindow() {
+            if(!subWindow || subWindow.closed){
+                var newWindow = window.open("subwin.html","Newwindow");
+            }else{
+                subWindow.focus();
+            }
+        }
+document.alinkColor = "purple";
+</script>
+    
+// function down(){
+
+// if(document.bgColor == "black" && document.fgColor == "white"){
+//     document.bgColor = "white";
+//     document.fgColor = "black";
+
+//     document.getElementById("btn").value = "DARK THEME";
+
+// }else{
+//     var bColor = document.bgColor = "black";
+//     var fColor = document.fgColor = "white";
+
+//     document.getElementById("btn").value = "LIGHT THEME";
+
+// }
+    
+
+
+</body>
+</html>

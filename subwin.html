@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onLoad="displayColor()">
+    <!-- <input type="button" onClick="goback" value="goback"> -->
+    <!-- <button onclick="goback()"></button> -->
+
+<button onclick="history.back()">GO BACK</button>
+
+
+    <script>
+function displayColor() {
+
+    var cc = self.opener.document.forms[0].myColor;
+    for(var i=0; i<cc.length; i++) {
+        if(cc[i].checked) {
+            self.document.write("Hello from Main Window!");
+            self.document.bgColor = cc[i].value;
+        }
+    }
+
+}
+
+// history.back();
+</script>
+</body>
+</html>
